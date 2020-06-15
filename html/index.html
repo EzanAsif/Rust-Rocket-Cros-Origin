@@ -27,10 +27,17 @@
        $(document).ready(function(){
            $("#btnSend").click(function(){
                $.ajax({
-                   url:"http://piaic-iot.site/add"
+                   url:"http://192.168.0.108:3000",
+                   type:"POST",
+                   data: JSON.stringify({
+                       "id":01,
+                       "content":$('#student').val()
+                   })
                })
            })
        })
    </script>
 </body>
 </html>
+
+<!-- github -> sir faheem -> rocket wali repo -->
