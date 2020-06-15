@@ -28,7 +28,8 @@ struct Message{
 fn make_cors() -> Cors{     //yeh function sirf un origins ko allow krega jsko hm allow krwana chah rhe hn
     let allowed_origins = AllowedOrigins::some_exact(&[
 
-        "http://127.0.0.1:5500/index.html"          //cross origin mien hm front end se bhi request krwa skte hn ya kisi aur server se bhi krwa skte hn
+        "http://rust-cors.surge.sh/",
+        "http://127.0.0.1:5500/"          //cross origin mien hm front end se bhi request krwa skte hn ya kisi aur server se bhi krwa skte hn
 
     ]) ; //jaha se koi cheez generate hoti ha usse origin khte hn
     CorsOptions{
